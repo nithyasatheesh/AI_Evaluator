@@ -25,10 +25,6 @@ PROJECT_SIGNALS = {
         "healthcare", "liver_disease", "liver disease", "liver patient dataset",
         "healthcare_education_text"
     ),
-    "Retail_Sales_Forecasting": (
-        "forecasting", "sales_forecasting", "retail sales forecasting",
-        "retail_data.csv", "seasonal-naive"
-    ),
     "Loan_Default": ("loan_default", "loan default", "default prediction", "credit risk")
 }
 

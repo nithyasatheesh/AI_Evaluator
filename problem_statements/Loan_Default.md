@@ -4,10 +4,10 @@
 Analyze loan applications and repayment/default outcomes to understand patterns associated with default, build predictive baselines, compare machine-learning and deep-learning approaches, and communicate findings with responsible AI safeguards.
 
 ## Data and assumptions
-Use the loan-default dataset supplied with this project. Inspect actual filenames, columns, target encoding, missingness, duplicates, identifier fields and target balance before modeling. The problem statement does not authorize inventing unprovided columns or assuming undocumented target codes.
+Use the loan-default dataset supplied with this project. Inspect actual filenames, columns, target encoding, missingness, duplicates, identifier fields and target balance before modeling. Do not invent unprovided columns or assume undocumented target codes.
 
 ## Milestone 1 — Data understanding and baseline
-Profile the dataset, conduct EDA, clean and engineer features, establish a logistic-regression baseline, and report confusion matrix, precision, recall, F1 and ROC-AUC when appropriate.
+Profile the dataset, conduct EDA, clean and engineer features, establish a logistic-regression baseline, and report confusion matrix, precision, recall, F1 and ROC-AUC where appropriate.
 
 ## Milestone 2 — Machine learning
 Develop and compare suitable classifiers, tune hyperparameters using training-only cross-validation, analyze feature importance cautiously, and explore borrower segments with clustering where appropriate.

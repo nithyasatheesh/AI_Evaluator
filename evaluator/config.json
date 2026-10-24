@@ -31,15 +31,6 @@
         "Milestone_3": "rubrics/healthcare/milestone_3.json",
         "Milestone_4": "rubrics/healthcare/milestone_4.json"
       }
-    },
-    "Retail_Sales_Forecasting": {
-      "problem_statement": "problem_statements/Retail_Sales_Forecasting.md",
-      "rubrics": {
-        "Milestone_1": "rubrics/forecasting/milestone_1.json",
-        "Milestone_2": "rubrics/forecasting/milestone_2.json",
-        "Milestone_3": "rubrics/forecasting/milestone_3.json",
-        "Milestone_4": "rubrics/forecasting/milestone_4.json"
-      }
     }
   }
 }
