@@ -1,0 +1,32 @@
+{
+  "project_id": "Healthcare_Liver_Disease",
+  "milestone_id": "Milestone_3",
+  "total_marks": 100,
+  "criteria": [
+    {
+      "name": "Neural Network Design & Implementation",
+      "max_marks": 25,
+      "guidance": "Build an appropriate neural-network classifier with documented architecture and reproducible training settings."
+    },
+    {
+      "name": "Data Preparation & Training",
+      "max_marks": 20,
+      "guidance": "Encode and scale correctly, prevent leakage and use validation, early stopping or regularization when suitable."
+    },
+    {
+      "name": "Model Evaluation & Overfitting Analysis",
+      "max_marks": 20,
+      "guidance": "Evaluate on held-out data and compare training/validation metrics to assess overfitting and errors."
+    },
+    {
+      "name": "ML vs DL Comparison",
+      "max_marks": 15,
+      "guidance": "Compare neural network with a selected ML baseline on the same held-out records and metrics."
+    },
+    {
+      "name": "NLP Implementation & Findings",
+      "max_marks": 20,
+      "guidance": "Use supplied healthcare education text for a defined text task; provide valid evidence and do not portray generated text as medical advice."
+    }
+  ]
+}

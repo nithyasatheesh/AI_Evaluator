@@ -1,0 +1,32 @@
+{
+  "project_id": "Retail_Customer_Purchase",
+  "milestone_id": "Milestone_4",
+  "total_marks": 100,
+  "criteria": [
+    {
+      "name": "LLM Explanations & Prompt Engineering",
+      "max_marks": 20,
+      "guidance": "Use explicit prompts to explain validated purchase trends and model results without inventing evidence or causality."
+    },
+    {
+      "name": "RAG: Ingestion/Retrieval/Grounding",
+      "max_marks": 20,
+      "guidance": "Demonstrate ingestion, chunking, retrieval, source metadata/citations and grounded responses over approved retail material."
+    },
+    {
+      "name": "Text-to-SQL & Query Safety",
+      "max_marks": 20,
+      "guidance": "Generate schema-aware read-only SQL, validate inputs and reject write/destructive or multi-statement queries."
+    },
+    {
+      "name": "AI Agent Orchestration",
+      "max_marks": 20,
+      "guidance": "Coordinate analysis, retrieval and SQL tools with clear routing, tool boundaries and traceable outputs."
+    },
+    {
+      "name": "Evaluation & Responsible AI",
+      "max_marks": 20,
+      "guidance": "Test factual grounding, retrieval quality, prompt injection, privacy, fairness and failure handling; document limitations."
+    }
+  ]
+}

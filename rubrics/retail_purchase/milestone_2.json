@@ -1,0 +1,32 @@
+{
+  "project_id": "Retail_Customer_Purchase",
+  "milestone_id": "Milestone_2",
+  "total_marks": 100,
+  "criteria": [
+    {
+      "name": "ML Model Development",
+      "max_marks": 25,
+      "guidance": "Implement appropriate tree-based and boosting regression models with consistent preprocessing and reproducible settings."
+    },
+    {
+      "name": "Hyperparameter Tuning & Validation",
+      "max_marks": 20,
+      "guidance": "Tune selected parameters using training-only cross-validation or a suitable validation split; keep final test data untouched."
+    },
+    {
+      "name": "Model Comparison & Performance Evaluation",
+      "max_marks": 20,
+      "guidance": "Compare candidates on the same holdout using MAE, RMSE and R²; discuss practical differences and errors."
+    },
+    {
+      "name": "Risk Factor / Feature Importance Analysis",
+      "max_marks": 15,
+      "guidance": "Use valid model or permutation importance to interpret purchase drivers; distinguish association from causation."
+    },
+    {
+      "name": "Clustering & Customer Segmentation",
+      "max_marks": 20,
+      "guidance": "Aggregate purchase behaviour at customer level, scale appropriate features, assess cluster quality and explain segments with evidence."
+    }
+  ]
+}

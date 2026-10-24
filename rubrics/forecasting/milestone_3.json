@@ -1,0 +1,32 @@
+{
+  "project_id": "Retail_Sales_Forecasting",
+  "milestone_id": "Milestone_3",
+  "total_marks": 100,
+  "criteria": [
+    {
+      "name": "Neural Forecasting Model Design",
+      "max_marks": 25,
+      "guidance": "Build a suitable feed-forward or sequence neural model for forecasting and document architecture/settings."
+    },
+    {
+      "name": "Sequence Preparation & Training",
+      "max_marks": 20,
+      "guidance": "Construct chronological sequences, scale using training data only, and prevent leakage across splits."
+    },
+    {
+      "name": "Forecast Evaluation & Overfitting Analysis",
+      "max_marks": 20,
+      "guidance": "Evaluate on future holdout data, inspect training/validation behaviour and analyze forecast errors."
+    },
+    {
+      "name": "ML vs DL/Baseline Comparison",
+      "max_marks": 15,
+      "guidance": "Compare deep learning, the best ML candidate and naive baselines on the same forecast horizon."
+    },
+    {
+      "name": "Forecasting Findings & Error Analysis",
+      "max_marks": 20,
+      "guidance": "Interpret horizon, uncertainty and group-level performance; clearly distinguish forecast from actual sales."
+    }
+  ]
+}

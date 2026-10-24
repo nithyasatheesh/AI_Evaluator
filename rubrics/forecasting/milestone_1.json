@@ -1,0 +1,32 @@
+{
+  "project_id": "Retail_Sales_Forecasting",
+  "milestone_id": "Milestone_1",
+  "total_marks": 100,
+  "criteria": [
+    {
+      "name": "Data Understanding & Quality Checks",
+      "max_marks": 20,
+      "guidance": "Inspect dates, stores, items and sales; validate duplicates, missing dates, target values, series coverage and frequency."
+    },
+    {
+      "name": "Exploratory Data Analysis (EDA)",
+      "max_marks": 20,
+      "guidance": "Explore trend, seasonality, weekday/month patterns and store/item differences with appropriate time-series visualizations."
+    },
+    {
+      "name": "Data Cleaning & Time Features",
+      "max_marks": 20,
+      "guidance": "Parse and sort dates, investigate missing-period meaning, engineer valid time features and prevent future-data leakage."
+    },
+    {
+      "name": "Baseline Forecasting Model",
+      "max_marks": 20,
+      "guidance": "Establish naive/seasonal-naive and/or regression baseline with chronological train/test separation."
+    },
+    {
+      "name": "Evaluation & Findings",
+      "max_marks": 20,
+      "guidance": "Report MAE, RMSE and/or sMAPE on a future holdout, interpret errors and state forecasting limitations."
+    }
+  ]
+}

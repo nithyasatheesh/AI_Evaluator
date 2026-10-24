@@ -1,0 +1,32 @@
+{
+  "project_id": "Healthcare_Liver_Disease",
+  "milestone_id": "Milestone_1",
+  "total_marks": 100,
+  "criteria": [
+    {
+      "name": "Data Understanding & Quality Checks",
+      "max_marks": 20,
+      "guidance": "Inspect patient attributes, status and lookup tables; verify identifiers, join keys, target mapping, missingness, duplicates and data quality."
+    },
+    {
+      "name": "Exploratory Data Analysis (EDA)",
+      "max_marks": 20,
+      "guidance": "Analyze target balance and clinical-feature distributions using appropriate statistics/plots, avoiding unsupported clinical interpretations."
+    },
+    {
+      "name": "Data Cleaning & Feature Engineering",
+      "max_marks": 20,
+      "guidance": "Handle missing values, types, outliers and categorical features transparently; exclude IDs and prevent leakage."
+    },
+    {
+      "name": "Logistic Regression Baseline",
+      "max_marks": 20,
+      "guidance": "Build a reproducible baseline classifier with appropriate stratified splitting and preprocessing fitted on training data."
+    },
+    {
+      "name": "Evaluation & Findings",
+      "max_marks": 20,
+      "guidance": "Report confusion matrix, precision, recall, F1 and ROC-AUC where valid; discuss false negatives, limitations and educational use."
+    }
+  ]
+}
