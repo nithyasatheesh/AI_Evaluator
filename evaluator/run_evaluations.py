@@ -18,28 +18,45 @@ SUBMISSION_ROOTS = (
 
 
 def choose_project_milestone(path, config):
-    lower_parts = [part.lower().replace("-", "_") for part in path.parts]
+    path_text = path.as_posix().lower().replace("-", "_")
+    filename = path.stem.lower()
+
     milestone = next(
         (
             f"Milestone_{i}"
             for i in range(1, 5)
-            if f"submission_milestone{i}" in lower_parts
-            or f"milestone_{i}" in lower_parts
-            or f"milestone{i}" in path.as_posix().lower()
+            if f"milestone{i}" in path_text
+            or f"milestone_{i}" in path_text
         ),
         None,
     )
-    project = config.get("default_project", "Loan_Default")
-    projects = config.get("projects", {})
-    for configured_project in projects:
-        if configured_project.lower() in lower_parts:
-            project = configured_project
-            break
-    project_config = projects.get(project, {})
-    if milestone not in project_config.get("rubrics", {}):
-        milestone = config.get("default_milestone", "Milestone_1")
-    return project, milestone
 
+    project_keywords = {
+        "retail_purchase": "Retail_Customer_Purchase",
+        "healthcare": "Healthcare_Liver_Disease",
+        "forecasting": "Retail_Sales_Forecasting",
+        "loan_default": "Loan_Default",
+    }
+
+    project = config.get("default_project", "Loan_Default")
+
+    for keyword, project_name in project_keywords.items():
+        if keyword in filename:
+            project = project_name
+            break
+
+    project_config = config.get("projects", {})
+    if project not in project_config:
+        raise ValueError(
+            f"Project '{project}' is missing from evaluator/config.json"
+        )
+
+    if milestone not in project_config[project].get("rubrics", {}):
+        raise ValueError(
+            f"No rubric configured for {project}/{milestone}"
+        )
+
+    return project, milestone
 
 def supported_submission(path):
     return (
