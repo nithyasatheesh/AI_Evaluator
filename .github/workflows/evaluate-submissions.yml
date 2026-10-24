@@ -1,0 +1,60 @@
+name: Evaluate Participant Submissions
+
+on:
+  push:
+    paths:
+      - "Submission-Milestone1/**"
+      - "Submission-Milestone2/**"
+      - "Submission-Milestone3/**"
+      - "Submission-Milestone4/**"
+      - "evaluator/**"
+      - "rubrics/**"
+      - "scripts/**"
+      - "requirements.txt"
+      - ".github/workflows/evaluate-submissions.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: evaluate-submissions-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+      - name: Identify submissions
+        id: changed
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python scripts/find_submissions.py "" "${{ github.sha }}" > changed_submissions.txt
+          else
+            python scripts/find_submissions.py "${{ github.event.before || '' }}" "${{ github.sha }}" > changed_submissions.txt
+          fi
+          echo "Submission files found:"
+          cat changed_submissions.txt
+          if [ -s changed_submissions.txt ]; then echo "found=true" >> "$GITHUB_OUTPUT"; else echo "found=false" >> "$GITHUB_OUTPUT"; fi
+      - name: Evaluate submissions
+        if: steps.changed.outputs.found == 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python -m evaluator.run_evaluations --files-from changed_submissions.txt --output-dir evaluation-reports
+      - name: Upload evaluation reports
+        if: always() && steps.changed.outputs.found == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: evaluation-reports-${{ github.run_number }}
+          path: evaluation-reports/
+          if-no-files-found: warn
+          retention-days: 90
