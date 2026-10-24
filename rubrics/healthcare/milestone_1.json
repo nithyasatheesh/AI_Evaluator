@@ -19,7 +19,7 @@
       "guidance": "Handle missing values, types, outliers and categorical features transparently; exclude IDs and prevent leakage."
     },
     {
-      "name": "Logistic Regression Baseline",
+      "name": "Linear Model Building",
       "max_marks": 20,
       "guidance": "Build a reproducible baseline classifier with appropriate stratified splitting and preprocessing fitted on training data."
     },
