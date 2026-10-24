@@ -19,7 +19,7 @@
       "guidance": "Justify missing-value treatment, encoding, feature creation and leakage prevention; exclude identifiers as predictive measurements unless justified."
     },
     {
-      "name": "Regression Baseline",
+      "name": "Linear Model Building",
       "max_marks": 20,
       "guidance": "Build a reproducible baseline for Purchase, split data properly, fit preprocessing only on training data and document assumptions."
     },
