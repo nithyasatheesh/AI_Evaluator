@@ -1,1 +1,0 @@
-Sample file for Milestone 1. This is illustrative, synthetic/demo content. Do not use its results as actual assessment evidence. Upload participant submissions in this folder using ParticipantID_Milestone1.ipynb naming.
