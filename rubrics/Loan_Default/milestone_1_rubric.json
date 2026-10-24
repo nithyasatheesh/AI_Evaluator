@@ -1,0 +1,32 @@
+{
+  "project_id": "Loan_Default",
+  "milestone_id": "Milestone_1",
+  "total_marks": 100,
+  "criteria": [
+    {
+      "name": "Data Understanding & Quality Checks",
+      "max_marks": 20,
+      "guidance": "Assess dataset structure, target variable, data types, missing values, duplicates, inconsistent values, and data-quality risks."
+    },
+    {
+      "name": "Exploratory Data Analysis (EDA)",
+      "max_marks": 20,
+      "guidance": "Assess univariate/bivariate analysis, plots, class balance, and explanations of patterns relevant to loan default."
+    },
+    {
+      "name": "Data Cleaning & Feature Engineering",
+      "max_marks": 20,
+      "guidance": "Assess missing-value handling, duplicates, encoding, scaling where appropriate, leakage prevention, and feature engineering rationale."
+    },
+    {
+      "name": "Logistic Regression Baseline",
+      "max_marks": 20,
+      "guidance": "Assess baseline classifier, train/test split, preprocessing, target mapping, and assumptions."
+    },
+    {
+      "name": "Evaluation & Findings",
+      "max_marks": 20,
+      "guidance": "Assess confusion matrix, precision, recall, F1, ROC-AUC where appropriate, interpretation, limitations, and actionable findings."
+    }
+  ]
+}

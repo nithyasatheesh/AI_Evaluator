@@ -1,0 +1,32 @@
+{
+  "project_id": "Loan_Default",
+  "milestone_id": "Milestone_4",
+  "total_marks": 100,
+  "criteria": [
+    {
+      "name": "LLM Explanations & Prompt Engineering",
+      "max_marks": 20,
+      "guidance": "Assess clear borrower-risk explanations, prompt design, grounded outputs, and avoidance of unsupported claims."
+    },
+    {
+      "name": "RAG: Ingestion/Retrieval/Grounding",
+      "max_marks": 20,
+      "guidance": "Assess document ingestion, chunking, embeddings/retrieval, relevant context, citations or evidence grounding, and limitations."
+    },
+    {
+      "name": "Text-to-SQL & Query Safety",
+      "max_marks": 20,
+      "guidance": "Assess natural-language-to-SQL correctness, schema awareness, read-only/safe execution controls, and validation."
+    },
+    {
+      "name": "AI Agent Orchestration",
+      "max_marks": 20,
+      "guidance": "Assess routing/orchestration among relevant agents/tools, state flow, error handling, and useful end-to-end behavior."
+    },
+    {
+      "name": "Evaluation & Responsible AI",
+      "max_marks": 20,
+      "guidance": "Assess test cases, quality/safety evaluation, privacy, fairness, transparency, human oversight, and limitations."
+    }
+  ]
+}

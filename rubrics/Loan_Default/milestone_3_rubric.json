@@ -1,0 +1,32 @@
+{
+  "project_id": "Loan_Default",
+  "milestone_id": "Milestone_3",
+  "total_marks": 100,
+  "criteria": [
+    {
+      "name": "Neural Network Design & Implementation",
+      "max_marks": 25,
+      "guidance": "Assess appropriate architecture, implementation, activation/loss/optimizer choices, and justified design."
+    },
+    {
+      "name": "Data Preparation & Training",
+      "max_marks": 20,
+      "guidance": "Assess preprocessing, class imbalance handling if relevant, train/validation split, training configuration, and reproducibility."
+    },
+    {
+      "name": "Model Evaluation & Overfitting Analysis",
+      "max_marks": 20,
+      "guidance": "Assess appropriate metrics, learning curves or validation analysis, generalization, and mitigation of overfitting."
+    },
+    {
+      "name": "ML vs DL Comparison",
+      "max_marks": 15,
+      "guidance": "Assess fair comparison against prior ML models using consistent splits/metrics and a justified conclusion."
+    },
+    {
+      "name": "NLP Implementation & Findings",
+      "max_marks": 20,
+      "guidance": "Assess text preparation, suitable NLP features/model, evaluation, examples/findings, and limitations."
+    }
+  ]
+}

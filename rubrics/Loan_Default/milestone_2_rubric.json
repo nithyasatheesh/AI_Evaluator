@@ -1,0 +1,32 @@
+{
+  "project_id": "Loan_Default",
+  "milestone_id": "Milestone_2",
+  "total_marks": 100,
+  "criteria": [
+    {
+      "name": "ML Model Development",
+      "max_marks": 25,
+      "guidance": "Assess appropriate machine learning models, reproducible pipelines, suitable train/test split, and sound model implementation."
+    },
+    {
+      "name": "Hyperparameter Tuning & Validation",
+      "max_marks": 20,
+      "guidance": "Assess cross-validation, search strategy, leakage prevention, tuning choices, and reproducibility."
+    },
+    {
+      "name": "Model Comparison & Performance Evaluation",
+      "max_marks": 20,
+      "guidance": "Assess comparison using suitable metrics, confusion matrix, precision, recall, F1, ROC-AUC where appropriate, and interpretation."
+    },
+    {
+      "name": "Risk Factor / Feature Importance Analysis",
+      "max_marks": 15,
+      "guidance": "Assess feature importance or model interpretability, direction and relevance of risk factors, and limitations."
+    },
+    {
+      "name": "Clustering & Borrower Segmentation",
+      "max_marks": 20,
+      "guidance": "Assess clustering approach, feature preparation, selection/justification of cluster count, segment profiling, and business interpretation."
+    }
+  ]
+}

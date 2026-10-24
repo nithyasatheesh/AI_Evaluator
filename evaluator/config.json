@@ -1,0 +1,18 @@
+{
+  "model": "gpt-4.1-mini",
+  "max_file_chars": 18000,
+  "max_total_chars": 45000,
+  "default_project": "Loan_Default",
+  "default_milestone": "Milestone_1",
+  "projects": {
+    "Loan_Default": {
+      "problem_statement": "assessment/problem_statements/Loan_Default.docx",
+      "rubrics": {
+        "Milestone_1": "rubrics/Loan_Default/milestone_1_rubric.json",
+        "Milestone_2": "rubrics/Loan_Default/milestone_2_rubric.json",
+        "Milestone_3": "rubrics/Loan_Default/milestone_3_rubric.json",
+        "Milestone_4": "rubrics/Loan_Default/milestone_4_rubric.json"
+      }
+    }
+  }
+}
