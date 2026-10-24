@@ -19,7 +19,7 @@
       "guidance": "Assess missing-value handling, duplicates, encoding, scaling where appropriate, leakage prevention, and feature engineering rationale."
     },
     {
-      "name": "Logistic Regression Baseline",
+      "name": "Linear Model Building",
       "max_marks": 20,
       "guidance": "Assess baseline classifier, train/test split, preprocessing, target mapping, and assumptions."
     },
